@@ -20,5 +20,5 @@ from dlaApp import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^visual/', views.visual),
+    url(r'^', views.visual)
 ]
