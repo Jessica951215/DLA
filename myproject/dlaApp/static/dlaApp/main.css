@@ -26,8 +26,8 @@
 }
 
 #buttons{
-	margin-right: 50px;
-	background-color: #e0dee0;
+	margin-right: 70px;
+
 }
 
 .wave {
@@ -44,7 +44,7 @@
 
 
 button:hover {
-    background-color: red;
+    background-color: #1a1aff;
 }
 
 

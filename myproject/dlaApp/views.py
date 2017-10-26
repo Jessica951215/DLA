@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 
 NUM_OF_CHANNELS = 16
-#FILE_DIR = "/Users/Hanlin/Desktop/DLA/myproject/data/f.txt"
-FILE_DIR = "/home/pi/myproject/data.txt"
+FILE_DIR = "/Users/Hanlin/Desktop/DLA/myproject/data/f.txt"
+#FILE_DIR = "/home/pi/myproject/data.txt"
 CACHE = [] # List[str] of length 16, one string for each channel
 DEBUG = True
 
@@ -31,6 +31,8 @@ def toWaveDormData(chanData):
 		newStr = dataLst[0]
 		for index in range(1, len(dataLst)):
 			thisBit = dataLst[index]
+			if thisBit not in ["1","0"]:
+				continue
 			if thisBit == prevStr:
 				newStr += "."
 			else:
