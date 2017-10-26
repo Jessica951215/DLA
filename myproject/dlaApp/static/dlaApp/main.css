@@ -5,7 +5,6 @@
 	padding-left: 0px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	overflow: scroll;
 }
 
 #topbar{
@@ -38,9 +37,18 @@
 	padding-left: 0px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	overflow: scroll;
+
+
+
 }
 
+#allwaves{
+	padding-left: 0px;
+	padding-top: 0px;
+	width:80%;
+
+	overflow-x: scroll;
+}
 
 
 button:hover {
